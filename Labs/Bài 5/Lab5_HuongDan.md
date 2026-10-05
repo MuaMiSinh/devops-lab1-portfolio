@@ -534,10 +534,10 @@ Thêm function `add_student()` cho phép thêm sinh viên mới vào danh sách,
 - Cập nhật `main()` để gọi `add_student()`
 
 ## Cách kiểm tra
-```bash
+
 python src/main.py
-```
-Kết quả: hiển thị 4 sinh viên (thêm SV004)
+
+=>Kết quả: hiển thị 4 sinh viên (thêm SV004)
 ```
 5. **Create pull request**
 
