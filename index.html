@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
+    <meta name="description" content="Portfolio Mua Mí Sính — DTC235180159, KTPM K22C. Lab 1: CI/CD với GitHub Actions và GitHub Pages.">
+    <title>Mua Mí Sính — DevOps Lab 1</title>
     <style>
         * {
             margin: 0;
@@ -20,6 +21,7 @@
             justify-content: center;
             align-items: center;
             color: #333;
+            padding: 20px;
         }
 
         .container {
@@ -27,6 +29,7 @@
             border-radius: 16px;
             padding: 48px;
             max-width: 600px;
+            width: 100%;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
@@ -69,26 +72,35 @@
         .footer {
             margin-top: 24px;
             font-size: 13px;
-            color: #999;
+            color: #666;
         }
 
         .status {
-            color: #38a169;
+            color: #237542;
             font-weight: bold;
+        }
+        a { color: #4358b5; }
+        .info p { overflow-wrap: anywhere; }
+        @media (max-width: 480px) {
+            .container { padding: 28px 20px; }
+            h1 { font-size: 27px; }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <h1> Hello, DevOps!</h1>
         <h2>Lab 1 — Trải nghiệm CI/CD Pipeline</h2>
 
         <div class="info">
+            <p><strong>Họ tên:</strong> Mua Mí Sính</p>
+            <p><strong>MSSV:</strong> DTC235180159</p>
+            <p><strong>Lớp:</strong> KTPM K22C</p>
             <p> <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
             <p> <strong>Deploy bởi:</strong> GitHub Actions CI/CD</p>
-            <p> <strong>Ngày deploy:</strong> <span id="date"></span></p>
-            <p> <strong>Pipeline status:</strong> <span class="status"> Automated</span></p>
+            <p> <strong>Ngày xem:</strong> <span id="date"></span></p>
+            <p><strong>CI/CD:</strong> <a href="https://github.com/MuaMiSinh/devops-lab1-portfolio/actions">Xem trạng thái pipeline thực tế</a></p>
         </div>
 
         <div>
@@ -101,10 +113,11 @@
         </div>
 
         <div class="footer">
+            <p><a href="https://github.com/MuaMiSinh/devops-lab1-portfolio">Mã nguồn trên GitHub</a></p>
             <p>Deployed automatically via GitHub Actions Pipeline</p>
             <p> Push code → CI Build → Auto Deploy → Live! </p>
         </div>
-    </div>
+    </main>
 
     <script>
         document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
