@@ -1,5 +1,21 @@
 # Lab 1: Trải nghiệm DevOps Workflow End-to-End
 
+## Bài thực hành đã hoàn thành
+
+- **Họ tên sinh viên:** Mua Mí Sính
+- **MSSV:** DTC235180159
+- **Lớp:** KTPM K22C
+- **Bộ bài nộp:** [BaiNop](BaiNop/README.md)
+- **Báo cáo:** [Báo cáo Lab 1](BaiNop/BaoCao_Lab1.md)
+- **Kết quả CI/CD:** [Hai lần triển khai thành công](BaiNop/KetQua_ThucHanh.md)
+- **Ảnh minh chứng:** [screenshots](BaiNop/screenshots/)
+- **Mã nguồn website:** [index.html](../../index.html)
+- **Pipeline:** [deploy.yml](../../.github/workflows/deploy.yml)
+- **Website online:** https://muamisinh.github.io/devops-lab1-portfolio/
+- **URL nộp bài Lab 1:** https://github.com/MuaMiSinh/devops-lab1-portfolio/tree/main/Labs/B%C3%A0i%201
+
+Phần bên dưới là hướng dẫn gốc của bài thực hành.
+
 ## Thông tin chung
 - **Bài học 1:** Tổng quan về Vận hành & Bảo trì Phần mềm
 - **CDR:** 1.2 (Hiểu DevOps vs truyền thống) + 1.3 (Hiểu vòng đời DevOps)

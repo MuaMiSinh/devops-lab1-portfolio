@@ -1,0 +1,50 @@
+# ============================================================
+# DevOps Lab 1 — CI/CD Pipeline với GitHub Actions
+# Tự động deploy website lên GitHub Pages mỗi khi push code
+# ============================================================
+
+name: Deploy to GitHub Pages
+
+# === Khi nào pipeline chạy? ===
+on:
+  push:
+    branches: [main]       # Chạy khi push lên nhánh main
+  workflow_dispatch:        # Cho phép chạy thủ công từ GitHub UI
+
+# === Các job trong pipeline ===
+permissions:
+  contents: write
+
+concurrency:
+  group: lab1-pages
+  cancel-in-progress: true
+
+jobs:
+  # Job 1: Build & Deploy
+  build-and-deploy:
+    runs-on: ubuntu-latest   # Chạy trên máy ảo Ubuntu (free)
+
+    steps:
+      # Step 1: Checkout code từ GitHub
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Kiểm tra HTML cơ bản
+      - name: Validate HTML
+        run: |
+          python3 scripts/validate-lab1.py
+
+      - name: Build static site
+        run: |
+          mkdir -p _site
+          cp index.html _site/index.html
+          touch _site/.nojekyll
+
+      # Step 3: Deploy lên GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          commit_message: "Auto-deploy from CI pipeline"

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 38721116527,
+    "name": "Deploy to GitHub Pages",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "67eab5d10b4bb3a1bcc5b83deab3f38e9db4e87d",
+    "event": "push",
+    "created_at": "2026-10-15T10:33:30Z",
+    "updated_at": "2026-10-15T10:33:43Z",
+    "url": "https://github.com/MuaMiSinh/devops-lab1-portfolio/actions/runs/38721116527",
+    "duration_seconds": 13.0
+  },
+  {
+    "id": 38721139719,
+    "name": "pages build and deployment",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "15873a585842bd543354b9e9a6b40a86347b0eba",
+    "event": "dynamic",
+    "created_at": "2026-10-15T10:33:42Z",
+    "updated_at": "2026-10-15T10:34:04Z",
+    "url": "https://github.com/MuaMiSinh/devops-lab1-portfolio/actions/runs/38721139719",
+    "duration_seconds": 22.0
+  },
+  {
+    "id": 38721502925,
+    "name": "Deploy to GitHub Pages",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "2586385ace0a9fcba0d2fd662fcbba2de688b0af",
+    "event": "push",
+    "created_at": "2026-10-15T10:36:46Z",
+    "updated_at": "2026-10-15T10:36:57Z",
+    "url": "https://github.com/MuaMiSinh/devops-lab1-portfolio/actions/runs/38721502925",
+    "duration_seconds": 11.0
+  },
+  {
+    "id": 38721521581,
+    "name": "pages build and deployment",
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "7dd9aee02531d96427f1bf63c8c15f791f3a9c2a",
+    "event": "dynamic",
+    "created_at": "2026-10-15T10:36:56Z",
+    "updated_at": "2026-10-15T10:37:19Z",
+    "url": "https://github.com/MuaMiSinh/devops-lab1-portfolio/actions/runs/38721521581",
+    "duration_seconds": 23.0
+  }
+]

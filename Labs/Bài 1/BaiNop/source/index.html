@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Mua Mí Sính — DTC235180159, KTPM K22C. Lab 1: CI/CD với GitHub Actions và GitHub Pages.">
+    <title>Mua Mí Sính — DevOps Lab 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 48px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 32px;
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-bottom: 24px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            text-align: left;
+        }
+
+        .info p {
+            margin: 8px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin: 4px;
+        }
+
+        .footer {
+            margin-top: 24px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .status {
+            color: #237542;
+            font-weight: bold;
+        }
+        a { color: #4358b5; }
+        .info p { overflow-wrap: anywhere; }
+        @media (max-width: 480px) {
+            .container { padding: 28px 20px; }
+            h1 { font-size: 27px; }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Xin chào, DevOps!</h1>
+        <h2>Lab 1 — Website đã được cập nhật tự động!</h2>
+
+        <div class="info">
+            <p><strong>Họ tên:</strong> Mua Mí Sính</p>
+            <p><strong>MSSV:</strong> DTC235180159</p>
+            <p><strong>Lớp:</strong> KTPM K22C</p>
+            <p> <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
+            <p> <strong>Deploy bởi:</strong> GitHub Actions CI/CD</p>
+            <p> <strong>Ngày xem:</strong> <span id="date"></span></p>
+            <p><strong>CI/CD:</strong> <a href="https://github.com/MuaMiSinh/devops-lab1-portfolio/actions">Xem trạng thái pipeline thực tế</a></p>
+        </div>
+
+        <div>
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">Git</span>
+            <span class="badge">GitHub Actions</span>
+            <span class="badge">CI/CD</span>
+            <span class="badge">DevOps</span>
+        </div>
+
+        <div class="footer">
+            <p><a href="https://github.com/MuaMiSinh/devops-lab1-portfolio">Mã nguồn trên GitHub</a></p>
+            <p>Deployed automatically via GitHub Actions Pipeline</p>
+            <p> Push code → CI Build → Auto Deploy → Live! </p>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
+    </script>
+</body>
+
+</html>
