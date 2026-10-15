@@ -5,7 +5,7 @@
 
 ## 1. Công cụ và cách thực hiện
 
-Chạy trong thư mục `BaiNop` bằng PowerShell:
+Chạy trong thư mục `Lab2 - Mua Mí Sính - DTC235180159` bằng PowerShell:
 
 ```powershell
 ./devops-check.ps1
