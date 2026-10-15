@@ -1,0 +1,4 @@
+Họ tên: Mua Mí Sính
+MSSV: DTC235180159
+Lớp: KTPM K22C
+Bài thực hành: Lab 2 — DevOps và các nguyên tắc CALMS

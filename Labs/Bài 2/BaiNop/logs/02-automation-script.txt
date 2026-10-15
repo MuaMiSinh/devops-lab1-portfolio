@@ -1,0 +1,8 @@
+[1/4] Prerequisites ready
+[2/4] Created src/ tests/ docs/
+[3/4] Generated application and configuration (existing files preserved)
+
+up to date in 11s
+[4/4] Dependencies ready
+SETUP COMPLETE in 13.97s: D:\Vận hành & bảo trì phần mền\baitap\Labs\Bài 2\BaiNop\dev-env
+Source control: project is inside the course repository; no nested git repository created.

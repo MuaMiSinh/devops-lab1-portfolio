@@ -1,0 +1,54 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  10.75kB
+
+Step 1/8 : FROM node:24-alpine
+24-alpine: Pulling from library/node
+862c5dc468d4: Pulling fs layer
+c3fb422c2ba3: Pulling fs layer
+e2de96513ba9: Pulling fs layer
+2af284e0bab3: Pulling fs layer
+862c5dc468d4: Download complete
+2af284e0bab3: Download complete
+e2de96513ba9: Download complete
+e2de96513ba9: Pull complete
+83a2ce1bdfbc: Download complete
+09fd0d321b09: Download complete
+c3fb422c2ba3: Download complete
+c3fb422c2ba3: Pull complete
+2af284e0bab3: Pull complete
+862c5dc468d4: Pull complete
+Digest: sha256:44fce696f38ba8c987c4db89954051000bbd05ffd8d8659ba15ed4a8602e937f
+Status: Downloaded newer image for node:24-alpine
+ ---> 44fce696f38b
+Step 2/8 : WORKDIR /app
+ ---> Running in 34881a922d96
+ ---> Removed intermediate container 34881a922d96
+ ---> 6451a399bfec
+Step 3/8 : COPY package.json ./
+ ---> db18ec937d10
+Step 4/8 : RUN npm install --omit=dev --ignore-scripts
+ ---> Running in 333eb7108987
+up to date, audited 1 package in 822ms
+
+found 0 vulnerabilities
+ ---> Removed intermediate container 333eb7108987
+ ---> ba75c9788d37
+Step 5/8 : COPY server.js ./
+ ---> afeb9eb80040
+Step 6/8 : USER node
+ ---> Running in 068dfab40dab
+ ---> Removed intermediate container 068dfab40dab
+ ---> 6898b678f042
+Step 7/8 : EXPOSE 3000
+ ---> Running in b29362aa8567
+ ---> Removed intermediate container b29362aa8567
+ ---> f50a895d3823
+Step 8/8 : CMD ["node", "server.js"]
+ ---> Running in 0082560390ca
+ ---> Removed intermediate container 0082560390ca
+ ---> d8f7c2567313
+Successfully built d8f7c2567313
+Successfully tagged devops-lab2-app:latest

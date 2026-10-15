@@ -1,0 +1,7 @@
+=== DEVOPS TOOLCHAIN CHECK ===
+code: 1.141.2
+git: git version 2.54.0.windows.1
+docker: Docker version 29.8.2, build 7fc2dff
+node: v24.18.0
+Docker Engine: 29.8.2 / linux
+Required toolchain is ready.

@@ -1,0 +1,5 @@
+d862fe9a7576d9ef5e69cd6e0307ebf342645d3cd8fb0956c11f2bcda040de4d
+curl.exe http://localhost:3000
+{"message":"Hello from Docker!","lab":"DevOps Lab 2 — Lean Principle","timestamp":"2026-10-15T10:24:31.973Z","node_version":"v24.22.0","platform":"linux"}
+Name=lab2-app Status=Up 2 seconds Ports=0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+HTTP JSON assertions: PASS

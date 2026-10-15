@@ -1,0 +1,6 @@
+.git
+node_modules
+logs
+screenshots
+dev-env
+*.zip
