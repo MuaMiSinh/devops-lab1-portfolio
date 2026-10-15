@@ -5,10 +5,10 @@
 - **Họ tên sinh viên:** Mua Mí Sính
 - **MSSV:** DTC235180159
 - **Lớp:** KTPM K22C
-- **Bộ bài nộp:** [BaiNop](BaiNop/README.md)
-- **Báo cáo:** [Báo cáo Lab 1](BaiNop/BaoCao_Lab1.md)
-- **Kết quả CI/CD:** [Hai lần triển khai thành công](BaiNop/KetQua_ThucHanh.md)
-- **Ảnh minh chứng:** [screenshots](BaiNop/screenshots/)
+- **Bộ bài nộp:** [Lab1 - **Mua Mí Sính - DTC235180159**](<Lab1 - Mua Mí Sính - DTC235180159/README.md>)
+- **Báo cáo:** [Báo cáo Lab 1](<Lab1 - Mua Mí Sính - DTC235180159/BaoCao_Lab1.md>)
+- **Kết quả CI/CD:** [Hai lần triển khai thành công](<Lab1 - Mua Mí Sính - DTC235180159/KetQua_ThucHanh.md>)
+- **Ảnh minh chứng:** [screenshots](<Lab1 - Mua Mí Sính - DTC235180159/screenshots/>)
 - **Mã nguồn website:** [index.html](../../index.html)
 - **Pipeline:** [deploy.yml](../../.github/workflows/deploy.yml)
 - **Website online:** https://muamisinh.github.io/devops-lab1-portfolio/
